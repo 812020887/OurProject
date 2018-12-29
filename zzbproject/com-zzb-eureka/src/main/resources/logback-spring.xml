@@ -30,7 +30,7 @@
     </appender>
     <!-- 原本的 logback 配置等級方式，現在可在 application.yml 改改參數就可以了  <logger name="org.springframework" level="DEBUG"/> <logger name="com.ps" level="DEBUG"/>-->
     <root level="${logging.level.root}">
-        <appender-ref ref="CONSOLE"/>
+      <!--  <appender-ref ref="CONSOLE"/>-->
         <appender-ref ref="TIME_FILE"/>
     </root>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
